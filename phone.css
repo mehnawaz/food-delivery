@@ -1,0 +1,46 @@
+/* Navigtion */
+#logo img{
+    /* margin: 10px 15px; */
+    height: 60px;
+}
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 15px;
+    padding: 0px 7px;
+
+}
+/* home section */
+#home{
+    /* height: 482px; */
+    /* margin-top: 0px; */
+    /* font-size: 2.3rem; */
+}
+#home::before{
+    height: 482px;
+    /* width: 100%; */
+    /* margin-bottom: -50px; */
+}
+#home .h-primary{
+    font-size: 40px;
+}
+#home p{
+    font-size: 20px;
+}
+/* services section  */
+#services{
+    flex-direction: column;
+
+}
+#services .box{
+    margin: 20px;
+    
+
+}
+/* Clints section */
+
+/* contact us section  */
+/* footer  */
+
+/* .h-primary{} */

@@ -1,0 +1,227 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigtion bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* logo and img  */
+#logo{
+
+}
+
+#logo img{
+    margin: 10px 30px;
+    /* width: 100px; */
+    height: 100px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+/*navbr  list style  ---------------------------------*/
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+     
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+     
+}
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('img/1.jpg') no-repeat center center/cover;
+    height: 850px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* opacity: 0.90; */
+}
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+#about{
+    background: url('/img/ella-olsson-mmnKI8kMxpc-unsplash.jpg') no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    padding: 50px 0;
+}
+/* services section */
+/* .center{
+    margin: px;
+} */
+#services{
+    margin: 30px;
+    display: flex;
+    /* width: 10px; */
+
+}
+#services .box {
+    border: 2px solid brown;
+    /* padding: 5px; */
+    margin: 5px 15px;
+    /* margin-bottom: -100px; */
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+}
+#services .box img{
+    height: 120px;
+    /* width: 300px; */
+    display: block;
+    margin: auto;
+}
+/* Clients Section ------ */
+#clients-section{
+    /* height: 344px; */
+    /* position: relative; */
+
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background:url(img/3.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clients-item{
+    padding: 20px;
+}
+#clients img{
+    height: 60px;
+
+}
+
+
+/* Contact Section--------- */
+#contact{
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url(img/2.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 3.2rem;
+    padding: 20px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 20px;
+}
+.btn{
+    padding: 6px 30px;
+    border: 1px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+
+    font-size: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    /* background: #000; */
+    /* background: rgb(206, 122, 122); */
+}
+h1.center{
+    margin-top: 50px;
+    /* padding-left: 30px; */
+}
+
+
+
